@@ -23,7 +23,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("GET /health", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`{"status":"ok"}`))
-	})
+	})N
 
 	log.Printf("POS API ready on :%s", cfg.ServerPort)
 	log.Fatal(http.ListenAndServe(":"+cfg.ServerPort, mux))
