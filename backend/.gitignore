@@ -1,0 +1,8 @@
+.gomcp/
+/bin/
+.env
+
+.pymcp/
+
+/docs/*.md
+/docs/adr/*.md
